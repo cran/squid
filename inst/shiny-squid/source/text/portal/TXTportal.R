@@ -107,23 +107,23 @@ portal_txt <- list(
                                 the operational data set for further analyses."),
       "parag4_title"         = "SQuID team",
       "parag4_contents"      = "Hassen Allegue (University of British Columbia, Vancouver, Canada)<br>
-                                Yimen Araya (Norwegian University of Science and Technology, Trondheim, Norway)<br>
-                                Niels Dingemanse (Max Planck Institute for Ornithology, Seewiesen & University of Munich, Germany)<br>
-                                Ned Dochtermann (North Dakota State University, Fargo, USA)<br>
-                                Laszlo Garamszegi (Estaci&oacute;n Biol&oacute;gica de Do&ntilde;ana-CSIC, Seville, Spain)<br>
+                                Yimen G. Araya-Ajoy (Norwegian University of Science and Technology, Trondheim, Norway)<br>
+                                Niels J. Dingemanse (Max Planck Institute for Ornithology, Seewiesen & University of Munich, Germany)<br>
+                                Ned A. Dochtermann (North Dakota State University, Fargo, USA)<br>
+                                Laszlo Z. Garamszegi (Estaci&oacute;n Biol&oacute;gica de Do&ntilde;ana-CSIC, Seville, Spain)<br>
                                 Shinichi Nakagawa (University of New South Wales, Sydney, Australia)<br>
                                 Denis R&eacute;ale (Universit&eacute; du Qu&eacute;bec &Agrave; Montr&eacute;al, Montreal, Canada)<br>
                                 Holger Schielzeth (University of Bielefeld, Bielefeld, Germany)<br>
-                                Dave Westneat (University of Kentucky, Lexington, USA)<br>",
-      "beginners"            = "The SQuID modules are designed for users who have some but not a 
+                                David F. Westneat (University of Kentucky, Lexington, USA)<br>",
+      "beginners"            = paste0("The SQuID modules are designed for users who have some but not a 
                                 lot of statistical background, particularly with linear mixed models. 
                                 We strongly recommend that if you are in this category, you begin with 
                                 the module 	&ldquo;Basic Lessons&rdquo;. That should be followed by the module 
                                 &ldquo;Non-stochastic environments&rdquo;. You will need to be very comfortable with 
                                 the ideas here before moving on. Which module you choose next depends 
                                 on your interests but Step 1 in module &ldquo;Multidimensional Plasticity&rdquo; 
-                                introduces multiple regression. The module &ldquo;Random regression&rdquo; 
-                                may also be good to do after module &ldquo;Non-stochastic environments&rdquo;.",
+                                introduces multiple regression. The module &ldquo;",Module_titles$mod6,"&rdquo; 
+                                may also be good to do after module &ldquo;Non-stochastic environments&rdquo;."),
       "teachers"             = "The SQuID modules can be very useful for teaching statistical concepts, 
                                 especially ones related to linear mixed models. Which module to use 
                                 depends on your students and what you want them to learn. 

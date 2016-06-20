@@ -5,6 +5,7 @@
 
 ### Statistical Quantification of Individual Differences: an educational and statistical tool for understanding multi-level phenotypic data in linear mixed models
 
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/squid)](http://cran.r-project.org/package=squid)
 
 #### Brief description
 <img id='logo' src='./inst/shiny-squid/www/pictures/logo_2.png' align='left' alt='SQuID' style='padding-right:20px;'>
@@ -15,7 +16,14 @@ The `squid` package has two main objectives: First, it provides an educational t
 
 #### Install squid package
 
-To install from GitHub:
+To install the latest released version (v0.1.0) from CRAN:
+
+```
+install.packages("squid")
+
+```
+
+To install the development version from GitHub:
 
 ```
 # install.packages("devtools")
@@ -51,14 +59,14 @@ It all started in Hannover in November 2013 at the occasion of a workshop on per
 
 #### SQuID team
 * Hassen Allegue (University of British Columbia, Vancouver, Canada)
-* Yimen Araya (Norwegian University of Science and Technology, Trondheim, Norway)
-* Niels Dingemanse (Max Planck Institute for Ornithology, Seewiesen & University of Munich, Germany)
-* Ned Dochtermann (North Dakota State University, Fargo, USA)
-* Laszlo Garamszegi (Estación Biológica de Doñana-CSIC, Seville, Spain)
+* Yimen G. Araya-Ajoy (Norwegian University of Science and Technology, Trondheim, Norway)
+* Niels J. Dingemanse (Max Planck Institute for Ornithology, Seewiesen & University of Munich, Germany)
+* Ned A. Dochtermann (North Dakota State University, Fargo, USA)
+* Laszlo Z. Garamszegi (Estación Biológica de Doñana-CSIC, Seville, Spain)
 * Shinichi Nakagawa (University of New South Wales, Sydney, Australia)
 * Denis Réale (Université du Québec À Montréal, Montreal, Canada)
 * Holger Schielzeth (University of Bielefeld, Bielefeld, Germany)
-* Dave Westneat (University of Kentucky, Lexington, USA)
+* David F. Westneat (University of Kentucky, Lexington, USA)
 
 
 #### References

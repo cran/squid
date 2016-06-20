@@ -1,7 +1,7 @@
-efd2e3e4ffdcdc0cfbb877f5941fd673 *DESCRIPTION
+245c777a286590329386b45be8116bbb *DESCRIPTION
 99067c8636ba6003f023cc764d08fbcd *LICENSE
 132ffa225932ac9a74688675dd753974 *NAMESPACE
-b264d9028b4391a064b6ea8cbc26b620 *NEWS.md
+693fe14e9e6cbd34d9756f0584709d80 *NEWS.md
 fc789fe4912784847ac8fc22a06d994e *R/Cor2CovMatrix.R
 2bbf2774ab5143370b6abfef505081bc *R/check_matrix.R
 30fb59d2236090221514ffe436c46a8e *R/check_one_boolean.R
@@ -25,7 +25,7 @@ ccbd8f8d22fc77067c640ae037f64d9d *R/reshapeMat.R
 54f616e1ed1e1ad732b81d0d09e22187 *R/setVariables.R
 b3dc6c69d3a365e2d501f1c35d89b277 *R/squidApp.R
 47154b3a773d4181512e1d47c7df8663 *R/squidR.R
-6dde2778bd19117ea094eafdba0f28bb *README.md
+c9ab8936ca4637f32041554a3a8f7ebb *README.md
 7fe5d8ed386eaadb7170aeeb1b891587 *inst/shiny-squid/figures/env_non-shared.png
 d05028225dc46ae69838fa05ae39fb00 *inst/shiny-squid/figures/env_shared.png
 a10ff393f32b5ae5fc5e6ae8289c2d88 *inst/shiny-squid/figures/sampling_all_different.png
@@ -89,7 +89,7 @@ cd4e73c36f15f83ab6062c47f2b9c232 *inst/shiny-squid/source/text/fullmodel/vignett
 9d148e62f73ca3703a5a60454c6532ab *inst/shiny-squid/source/text/modules/TXTmodule1.R
 dd454c5d1d0c9fa971c5f01994185d40 *inst/shiny-squid/source/text/modules/TXTmodule3.R
 57e9f28356dd80cafe0a4412bec9e3e9 *inst/shiny-squid/source/text/modules/TXTmodule6.R
-49096580936128cb68a4b1c7c51f93b6 *inst/shiny-squid/source/text/portal/TXTportal.R
+3d45c3e2db0f7977cc206b72efc392be *inst/shiny-squid/source/text/portal/TXTportal.R
 f7a7c379962137df104da87f97ad32f4 *inst/shiny-squid/source/utilities/Cor2CovMatrix.R
 1a9722d88c143c8e48c9676b39ceb11d *inst/shiny-squid/source/utilities/actionButton2.R
 223ddde996ad0f721778e75c7a10f51b *inst/shiny-squid/source/utilities/actionButtonLink.R
@@ -117,7 +117,7 @@ d842264072b20d7ed99d1528f4356938 *inst/shiny-squid/source/utilities/warning_msg.
 0ab67d835865899057ee3f377e4ea146 *inst/shiny-squid/source/utilities/withMathJax2.R
 019d74e686f52f2f549d0c47b35c51c5 *inst/shiny-squid/source/variables/fullmodel/VARfullmodel.R
 a2c22a0b2a07ae6454612ac946defa70 *inst/shiny-squid/source/variables/general/VARgeneral.R
-8ddfe3e089ba669db833014bcbe39304 *inst/shiny-squid/source/variables/modules/VARmodules.R
+4ec94722bbc09517007ec20b9e89fb62 *inst/shiny-squid/source/variables/modules/VARmodules.R
 285d6bcb98090c1945feeb0725d8dcf8 *inst/shiny-squid/test.R
 79a340d72292ec6c77a78eb360a4c88f *inst/shiny-squid/ui.R
 35aa9de41a6af4aa0e97d373c6c5b8fb *inst/shiny-squid/www/css/jquery.qtip.css
@@ -174,8 +174,8 @@ bb2e03c17cde1ae655c659d62f481856 *inst/shiny-squid/www/pictures/shared_vs_unshar
 580a2e3af30bb65e4e17636470476660 *inst/shiny-squid/www/pictures/underConstruction_pic.pdf
 620202ee5b12df29bb113f77cd633dc9 *inst/shiny-squid/www/pictures/underConstruction_pic.png
 22d9e94f12465f27115c913e1761e9f0 *inst/shiny-squid/www/xml/qtip.xml
-c753f9693647014fea8cac4a8e320069 *man/package-squid.Rd
+570307b83ba7e27fffadcbf4efe3097d *man/package-squid.Rd
 754a06e0efaf9b51e82489e7f879f6b0 *man/squidApp.Rd
-e97457f43b7a89485e681e4316251b5a *man/squidR.Rd
+70542d91eb02bee74194100a89495e16 *man/squidR.Rd
 6022890a4ac2a17ed8e284829964216b *tests/testthat.R
 7d16d9f013ec9df5bc202ac80305b9fe *tests/testthat/test_squidR.R
