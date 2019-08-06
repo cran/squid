@@ -83,6 +83,11 @@ shinyUI(
              tags$div(class="myPage",source("./source/pages/fullModel/UIfullModel.R",local=TRUE)[["value"]])
     ), # End tabPanel Full Model 
 
+    # R code page
+    tabPanel("R code",
+    				 fixedPage(wellPanel(shiny::includeMarkdown("./source/pages/Rcode/Rcode.md")))
+    ), # End tabPanel People
+    
     # About us page
     tabPanel("About us", icon=icon("users", "fa-users"),
        tags$div(class="myPage myTutorial",
@@ -102,6 +107,7 @@ shinyUI(
 
     # Contact us page
     tabPanel("Contact us", icon=icon("envelope", "fa-users"),
+    				 
              tags$div(class="myPage myTutorial",
                 fixedPage(
                   wellPanel( 
@@ -118,7 +124,7 @@ shinyUI(
      fixedPage(div(class="line"),
        # Boolean showing when a simulation is running
        conditionalPanel(
-         condition = "0",         
+         condition = "0",
          checkboxInput("isRunning", "", FALSE)
        ), 
        " "

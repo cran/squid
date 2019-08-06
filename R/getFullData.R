@@ -27,7 +27,7 @@ getFullData <- function(Mu, N, B, V, Time, variables, environments){
     }else{
       ind          <- matrix(0,  N$NI*N$NS*N$NP*N$NT, variables$nb.IS)  
     }   
-  
+	
     #######################################################################################
     # Create environmnetal effect values 
     
@@ -55,24 +55,33 @@ getFullData <- function(Mu, N, B, V, Time, variables, environments){
     X <- repmat(X,N$NT,1)
     
     ############################################## 
-    # Higher-level grouping variance (h)  
-    if(V$VG == 0){
-      G   <- vector(N$NI*N$NT*N$NP*N$NS, mode = "double")
+    # Higher-level grouping (Co)variance (h)  
+    if(sum(diag(V$VG)) != 0){
+     	VCov_G <- Cor2CovMatrix(V$VG)
+    	G      <- rep(rep(as.vector(MASS::mvrnorm(N$NG*N$NP, rep(Mu,N$NT), VCov_G)), each=N$NI/N$NG), each=N$NS)
     }else{
-      G   <- rep(rep(stats::rnorm(N$NG*N$NT*N$NP, Mu, sqrt(V$VG)), each=N$NI/N$NG), each=N$NS)
+    	G      <- vector(N$NI*N$NT*N$NP*N$NS, mode = "double")
+    }
+
+    Group <- as.factor(rep(rep(1:N$NG, each=N$NI/N$NG), each=N$NS))
+    
+    ############################################## 
+    # Residual (Co)Variance matrix
+    if(sum(diag(V$Ve)) != 0){
+    	VCov_e <- Cor2CovMatrix(V$Ve)
+    	### Generate residuals 
+    	e      <- as.vector(MASS::mvrnorm(N$NI*N$NS*N$NP, rep(Mu,N$NT), VCov_e))
+    }else{
+    	e      <- rep(0,  N$NI*N$NS*N$NP*N$NT)  
     }
       
-    ############################################## 
-    # Measurement error variance (me)  
-    e           <- stats::rnorm(N$NI*N$NT*N$NP*N$NS, Mu, sqrt(V$Ve))
-    
     ############################################## 
     # Phenotypic equation
     Phenotype   <-  base::rowSums((B + ind) * X) + G + e
     
     ############################################## 
     
-    Individual       <- rep(rep(1:(N$NI*N$NP), each=N$NS), N$NT)
+    Individual       <- rep(rep(rep(1:N$NI, each=N$NS), N$NP), N$NT)
     
     Individual_Trait <- vector(mode="integer", N$NI*N$NP*N$NT)
     
@@ -89,10 +98,11 @@ getFullData <- function(Mu, N, B, V, Time, variables, environments){
     Trait        <- as.factor(rep(1:N$NT, each=N$NS*N$NI*N$NP))
     time         <- rep(1:N$NS, N$NI*N$NP*N$NT)
     
-    full_Data    <- data.frame("Replicate"        = Population,                                
+    full_Data    <- data.frame("Replicate"        = Population,
                                "Individual"       = Individual,
+                               "Group"            = Group,
                                "Individual_Trait" = Individual_Trait,
-                               "Trait"            = Trait, 
+                               "Trait"            = Trait,
                                "Time"             = time,
                                "Phenotype"        = Phenotype,
                                "B0"               = B[,variables$B0],

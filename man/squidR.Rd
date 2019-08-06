@@ -25,6 +25,7 @@ A description of the columns of the full and the sampled \code{data.frame} is pr
   \itemize{
    \item \code{Replicate}: (factor) the replicated population identifier.
    \item \code{Individual}: (factor) the individual identifier.
+   \item \code{Group}: (factor) the high-level grouping identifier.
    \item \code{Individual_Trait}: (factor) the identifier of each individual/trait combination.
    \item \code{Trait}: (factor) the trait identifier.
    \item \code{Time}: (integer) the time step value.
@@ -88,16 +89,6 @@ The argument \code{input} is a list that contains the different input parameters
   \item \code{X1_sto_corr} (default 0): \code{numeric}; the correlation value ranging from 0 to 1 that characterizes the magnitude of the temporal autocorrelation between two consecutive time steps.
   
   \item \code{X1_lin_state} (default \code{FALSE}): \code{logical}; if \code{TRUE}, a linear trend will be added to the environmental effect x1.
-  
-  \item \code{X1_lin_shared} (default \code{TRUE}): \code{logical}; if \code{TRUE}, the linear trend included in the environmental effect x1 will be shared between individuals. If \code{FALSE}, each individual will experience a different linear trend within the environmental effect x1. A different linear trend is generated for each individual by varying the intercept and the slope of the linear equation. The variation in intercepts and slopes following a normal distribution with means \code{X1_lin_intercept}, \code{X1_lin_slope} and variance \code{X1_lin_V}.
-  
-  \item \code{X1_lin_intercept} (default 0): \code{numeric}; the intercept of the linear trend included into the environmental effect x1.
-  
-  \item \code{X1_lin_slope} (default 1): \code{numeric}; the slope of the linear trend included into the environmental effect x1.
-  
-  \item \code{X1_lin_V} (default 1): \code{numeric}; the variance used to generate different (unshared) linear trend effect for each individual within the environmental effect x1.
-
-  \item \code{X1_cyc_state} (default \code{FALSE}): \code{logical}; if \code{TRUE}, a cyclic trend will be added the environmental effect x1.
   
   \item \code{X1_lin_shared} (default \code{TRUE}): \code{logical}; if \code{TRUE}, the linear trend included in the environmental effect x1 will be shared between individuals. If \code{FALSE}, each individual will experience a different linear trend within the environmental effect x1. A different linear trend is generated for each individual by varying the intercept and the slope of the linear equation. The variation in intercepts and slopes following a normal distribution with means \code{X1_lin_intercept}, \code{X1_lin_slope} and variance \code{X1_lin_V}.
   
@@ -184,7 +175,7 @@ When the full data of a previous squid simulation is passed to \code{squidR} thr
 
 }
 \section{References}{
-Allegue, H., Araya-Ajoy, Y.G., Dingemanse, N.J., Dochtermann N.A., Garamszegi, L.Z., Nakagawa, S., Reale, D., Schielzeth, H. and Westneat, D.F. (2016) SQuID - Statistical Quantification of Individual Differences: an educational and statistical tool for understanding multi-level phenotypic data in the mixed modelling framework. \emph{Methods in Ecology and Evolution}, submitted manuscript.
+Allegue, H., Araya-Ajoy, Y.G., Dingemanse, N.J., Dochtermann N.A., Garamszegi, L.Z., Nakagawa, S., Reale, D., Schielzeth, H. and Westneat, D.F. (2016) SQuID - Statistical Quantification of Individual Differences: an educational and statistical tool for understanding multi-level phenotypic data in linear mixed models. \emph{Methods in Ecology and Evolution}, Accepted 15/9/2016, p29.
 }
 \examples{
 ## create the input list ##
