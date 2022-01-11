@@ -1,12 +1,15 @@
 ### Statistical Quantification of Individual Differences: an educational and statistical tool for understanding multi-level phenotypic data in linear mixed models
 
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/squid)](https://cran.r-project.org/package=squid)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/squid)](https://cran.r-project.org/package=squid)
 [![Build
-Status](https://travis-ci.org/hallegue/squid.svg?branch=master)](https://travis-ci.org/hallegue/squid)
+Status](https://travis-ci.org/squid-group/squid.svg?branch=master)](https://travis-ci.org/squid-group/squid)
+[![Downloads](https://cranlogs.r-pkg.org/badges/squid?color=brightgreen)](https://cran.r-project.org/package=squid)
+[![total
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/squid)](https://cranlogs.r-pkg.org/badges/grand-total/squid)
 
 #### Brief description
 
-<img id='logo' src='./inst/shiny-squid/www/pictures/logo_2.png' align='left' alt='SQuID' style='padding-right:20px;'>
+<img id='logo' src='./man/pictures/logo_2.png' align='left' alt='' style='padding-right:20px;'>
 **SQuID** stands for **S**tatistical **Qu**antification of
 **I**ndividual **D**ifferences and is the product of the SQuID working
 group. The package aims to help scholars who, like us, are interested in
@@ -31,7 +34,7 @@ analysis of multilevel and multivariate data.
 
 #### Install squid package
 
-To install the latest released version (v0.1.1) from CRAN:
+To install the latest released version from CRAN:
 
     install.packages("squid")
 
@@ -41,7 +44,7 @@ To install the development version from GitHub:
     devtools::install_github("hallegue/squid")
 
 Get more information about the installation of the
-[devtools](https://CRAN.R-project.org/package=devtools/readme/README.html)
+[devtools](https://cran.r-project.org/package=devtools/readme/README.html)
 package.
 
 #### Background
@@ -103,7 +106,7 @@ population) repeatedly expressing phenotypes, for one or two different
 traits, in uniform time. Phenotypic values of traits are generated
 following the general principle of the phenotypic equation ([Dingemanse
 & Dochtermann 2013, Journal of Animal
-Ecology](https://onlinelibrary.wiley.com/doi/10.1111/1365-2656.12013/abstract)):
+Ecology](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2656.12013)):
 phenotypes are assumed to be the summed effects of a series of
 components and the phenotypic variance (Vp) is the sum of the respective
 variances in theses causal components. The user has thus the flexibility
