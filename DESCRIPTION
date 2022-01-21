@@ -1,6 +1,6 @@
 Package: squid
 Title: Statistical Quantification of Individual Differences
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Hassen"  , "Allegue"        , email = "h.all@disroot.org"                 , role = c("aut","cre")),
     person("Yimen"   , "G. Araya-Ajoy"  , email = "yimencr@gmail.com"                 , role = "aut"),
@@ -35,7 +35,7 @@ Imports: stats, shiny (>= 1.6.0), shinyMatrix (>= 0.4.0), ggplot2 (>=
 RoxygenNote: 7.1.1
 Suggests: testthat
 NeedsCompilation: no
-Packaged: 2022-01-11 15:10:46 UTC; Hassen
+Packaged: 2022-01-21 20:20:50 UTC; HASSEN
 Author: Hassen Allegue [aut, cre],
   Yimen G. Araya-Ajoy [aut],
   Niels J. Dingemanse [aut],
@@ -47,4 +47,4 @@ Author: Hassen Allegue [aut, cre],
   David F. Westneat [aut]
 Maintainer: Hassen Allegue <h.all@disroot.org>
 Repository: CRAN
-Date/Publication: 2022-01-11 17:40:02 UTC
+Date/Publication: 2022-01-21 20:40:02 UTC

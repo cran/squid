@@ -1,7 +1,7 @@
-1a35c1833c7bda6fe8730026a0108558 *DESCRIPTION
+05a5da7609cce40702f316690c753714 *DESCRIPTION
 99067c8636ba6003f023cc764d08fbcd *LICENSE
 132ffa225932ac9a74688675dd753974 *NAMESPACE
-ad17b4b5dccf97580a02a8a72ea9c53d *NEWS.md
+f04fcbdbd69b2c5d7eebb1cdedbd41dc *NEWS.md
 0ff676892f3929b5dd3080631422394d *R/displayResults.R
 6fa236c7edf3b6e9f46b0434a039adfe *R/environment.R
 111499020ded12635043038eeec13965 *R/errorManagement.R
@@ -29,7 +29,7 @@ d03824bd180f208dbc250d4eca52def7 *inst/shiny-squid/source/inputs/get_numeric_inp
 790970511179767c44a16f7425fe5487 *inst/shiny-squid/source/pages/full_model/ui_environment.R
 7768373c0e039b2d3302ec10b1bb1a2d *inst/shiny-squid/source/pages/full_model/ui_full_model.R
 126d1c090f68fc7c3922301c19e81c30 *inst/shiny-squid/source/pages/full_model/ui_specific_environment.R
-7ab71728c8cd3a82ca54862b62ab828e *inst/shiny-squid/source/pages/full_model_sbys/ui_full_model_sbys.R
+f5471ecc80cbf15a0a768aefb356c684 *inst/shiny-squid/source/pages/full_model_sbys/ui_full_model_sbys.R
 15ed09e201e8b4345a024a733abbb441 *inst/shiny-squid/source/pages/full_model_sbys/ui_fullmodel_equation.R
 575c4ac5b164cc05e37f5415cd8c1fb4 *inst/shiny-squid/source/pages/full_model_sbys/ui_fullmodel_equation_2.R
 3c461a13a1f7d93e43c4549993b3acd4 *inst/shiny-squid/source/pages/full_model_sbys/ui_fullmodel_sbys_bivar_summary.R
